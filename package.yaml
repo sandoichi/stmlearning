@@ -4,15 +4,15 @@ github:              "sandoichi/stmlearning"
 license:             BSD3
 author:              "sandoichi"
 maintainer:          ""
-copyright:           "2019 Sandoichi"
+copyright:           ""
 
 extra-source-files:
 - README.md
 - ChangeLog.md
 
 # Metadata used when publishing your package
-# synopsis:            Short description of your package
-# category:            Web
+# synopsis:            Learning STM
+# category:            Concurrency
 
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
