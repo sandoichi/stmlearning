@@ -69,6 +69,4 @@ run numCount workerCount = do
     `finally` atomically (closeTBMChan workChan *> closeTBMChan resultChan)
 
   results <- gatherResults resultChan
-  forM_ (toList results)(putStrLn . formatResults)
-
-  pure ()
+  forM_ (toList results) (putStrLn . formatResults)
