@@ -58,7 +58,7 @@ gatherResults resultChan = do
 formatResults :: (Int, [MatchResult]) -> String
 formatResults (workerId, results) =
   let (failures, successes) = partition (== Failed) results
-  in printf "Worker %i failed %i times, but matched these correctly: %s"
+  in printf "\tWorker %i failed %i times, but matched these correctly: %s"
       workerId (length failures) (show $ fmap (\(Succeeded x) -> x) successes)
 
 run :: Int -> Int -> IO ()
